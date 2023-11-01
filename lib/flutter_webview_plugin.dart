@@ -1,4 +1,4 @@
-library flutter_webview_plugin;
+library flutter_webview_cash;
 
 export 'src/base.dart';
 export 'src/javascript_channel.dart';

@@ -1,3 +1,6 @@
+# 0.5.0
+- migrated to null safety
+
 # 0.4.0 
 - migrated to null safety
 
