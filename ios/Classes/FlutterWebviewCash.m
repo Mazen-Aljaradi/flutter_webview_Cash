@@ -1,10 +1,10 @@
-#import "FlutterWebviewPlugin.h"
+#import "FlutterWebviewCash.h"
 #import "WebviewJavaScriptChannelHandler.h"
 
 static NSString *const CHANNEL_NAME = @"flutter_webview_plugin";
 
 // UIWebViewDelegate
-@interface FlutterWebviewPlugin() <WKNavigationDelegate, UIScrollViewDelegate, WKUIDelegate> {
+@interface FlutterWebviewCash() <WKNavigationDelegate, UIScrollViewDelegate, WKUIDelegate> {
     BOOL _enableAppScheme;
     BOOL _enableZoom;
     NSString* _invalidUrlRegex;
@@ -13,14 +13,14 @@ static NSString *const CHANNEL_NAME = @"flutter_webview_plugin";
 }
 @end
 
-@implementation FlutterWebviewPlugin
+@implementation FlutterWebviewCash
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
     channel = [FlutterMethodChannel
                methodChannelWithName:CHANNEL_NAME
                binaryMessenger:[registrar messenger]];
 
     UIViewController *viewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    FlutterWebviewPlugin* instance = [[FlutterWebviewPlugin alloc] initWithViewController:viewController];
+    FlutterWebviewCash* instance = [[FlutterWebviewCash alloc] initWithViewController:viewController];
     
     [registrar addMethodCallDelegate:instance channel:channel];
 }

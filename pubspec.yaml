@@ -4,7 +4,7 @@ authors:
 - Mazen Aljaradi <m.f.aljaradi@gmail.com>
 
 homepage: https://github.com/Mazen-Aljaradi/flutter_webview_Cash
-version: 0.5.1
+version: 0.5.2
 
 
 environment:
@@ -18,7 +18,7 @@ flutter:
         package: com.flutter_webview_plugin
         pluginClass: FlutterWebviewPlugin
       ios:
-        pluginClass: FlutterWebviewPlugin
+        pluginClass: FlutterWebviewCash
 
 dependencies:
   flutter:
